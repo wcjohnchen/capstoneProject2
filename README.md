@@ -4,7 +4,7 @@
 
 Dataset: Housing Price in Beijing:
 
-https://www.kaggle.com/ted8080/house-prices-and-images-socal
+https://www.kaggle.com/ruiqurm/lianjia
 
 This dataset includes the housing prices and their features at Beijing, China.  The goal of this study is to accurately predict the prices by comparing various models: linear, ridge, lasso, decision tree, random forest, gradient boosting, and convolutional neural network-based regression.
 
