@@ -13,7 +13,7 @@ Dataset: House Prices and Images - SoCal:
 
 https://www.kaggle.com/ted8080/house-prices-and-images-socal
 
-This dataset includes the housing prices and their images in Southern Califronia.  The goal of this study to predict the prices from images using convolutional neural network.
+This dataset includes the housing prices and their images in Southern Califronia.  The goal of this study to predict the prices from the images using convolutional neural network.
 
 ## Proposal III:
 
