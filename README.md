@@ -49,11 +49,11 @@ Figure.  Gradient boosting regression: test set: RMSE vs learing rate at specifi
 ![](figure/test_rmse_lr.png)
 
 
-Figure.  Permutation importances of training set.
+Figure.  Gradient boosting regression: permutation importances of training set.
 
 ![](figure/permutation.png)
 
 
-Table.  Training and test results.
+Table.  Overall training and test results.
 
 ![](figure/table.jpg)
