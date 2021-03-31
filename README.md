@@ -58,4 +58,3 @@ Table.  Overall training and test results.
 
 ![](figure/table.jpg)
 
-...
