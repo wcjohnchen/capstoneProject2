@@ -57,3 +57,5 @@ Figure.  Gradient boosting regression: permutation importances of training set.
 Table.  Overall training and test results.
 
 ![](figure/table.jpg)
+
+...
