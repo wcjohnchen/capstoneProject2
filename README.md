@@ -24,12 +24,27 @@ Figure.  Correlation matrix.
 
 ## Results
 
-Figure.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimator.
+Figure.  Residual plots.
+
+![](figure/residual_rf.png)
+
+![](figure/residual_dt.png)
+
+![](figure/residual_gbr.png)
+
+![](figure/residual_ridge.png)
+
+![](figure/residual_lasso.png)
+
+![](figure/residual_linear.png)
+
+
+Figure.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimators.
 
 ![](figure/train_rmse_lr.png)
 
 
-Figure.  Gradient boosting regression: test set: RMSE vs learing rate at specific estimator.
+Figure.  Gradient boosting regression: test set: RMSE vs learing rate at specific estimators.
 
 ![](figure/test_rmse_lr.png)
 
