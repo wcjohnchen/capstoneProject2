@@ -7,8 +7,6 @@ The goal of this study is to accurately predict housing prices by comparing vari
 
 ## Exploratory Data Analysis
 
-Regression.
-
 Figure.  Histograms.
 
 ![](figure/histograms.png)
@@ -25,6 +23,8 @@ Figure.  Correlation matrix.
 
 
 ## Results
+
+Regression.
 
 Figure.  Residual plots.
 
