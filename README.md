@@ -40,11 +40,17 @@ Figure.  Correlation matrix.
 
 
 ## Regression Models
+
 Hyperparameter optimization:
+
 Random forest:
+
 Decision tree:
+
 Gradient boosting regression:
+
 Ridge regression:
+
 Lasso regression:
 
 Figure.  Residual plots.
