@@ -43,15 +43,17 @@ Figure.  Correlation matrix.
 
 Hyperparameter optimization:
 
-Random forest:
+Random forest: best parameters: {'max_depth': 55, 'max_features': 'auto', 'min_samples_leaf': 1, 'n_estimators': 1550, 'oob_score': True}
 
-Decision tree:
+Decision tree: best parameters: {'max_depth': 15, 'max_features': 'auto'}
 
-Gradient boosting regression:
+Gradient boosting regression: best parameters: {'learning_rate': 0.01, 'max_depth': 10, 'max_features': 'auto', 'n_estimators': 4250, 'subsample': 0.15}
 
-Ridge regression:
+Ridge regression: best parameters: {'alpha': 0.0}
 
-Lasso regression:
+Lasso regression: best parameters: {'alpha': 0.001}
+
+---------
 
 Figure.  Residual plots.
 
