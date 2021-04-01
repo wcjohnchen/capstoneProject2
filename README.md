@@ -53,7 +53,7 @@ Ridge regression: best parameters: {'alpha': 0.0}
 
 Lasso regression: best parameters: {'alpha': 0.001}
 
----------
+      
 
 Figure.  Residual plots.
 
