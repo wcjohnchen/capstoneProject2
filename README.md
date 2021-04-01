@@ -2,10 +2,21 @@
 
 ## Aim
 
-The goal of this study is to accurately predict housing prices by comparing various machine learning models: linear, ridge, lasso, decision tree, random forest, gradient boosting regression, and convolutional neural network (CNN)-based classification.  This dataset includes relevant features and images of houses in Southern California (https://www.kaggle.com/ted8080/house-prices-and-images-socal).
+The goal of this study is to accurately predict housing prices by comparing various machine learning models: linear, ridge, lasso, decision tree, random forest, gradient boosting regression, and convolutional neural network (CNN)-based classification.  This dataset includes relevant features and images of houses in Southern California.  It is available at: https://www.kaggle.com/ted8080/house-prices-and-images-socal.
 
 
 ## Exploratory Data Analysis
+
+The dataset contains 15,474 house entires and corresponding images.  A list of features in the dataset includes:
+1. Image ID
+2. Street
+3. City
+4. City code
+5. Bed
+6. Bath
+7. Square foot
+8. Price
+
 
 Figure.  Histograms.
 
@@ -22,9 +33,7 @@ Figure.  Correlation matrix.
 ![](figure/correlation_matrix.png)
 
 
-## Results
-
-Regression.
+## Regression Models
 
 Figure.  Residual plots.
 
@@ -61,4 +70,4 @@ Table.  Overall training and test results.
 ![](figure/table.jpg)
 
 
-Classification.
+## Classification Model
