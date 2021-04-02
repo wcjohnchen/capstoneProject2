@@ -10,7 +10,7 @@ The goal of this study is to accurately predict housing prices by comparing vari
 
 2. Modeling
 
-    Regression.  Supervised learning models were implented using Sckit-Learn.  The predictor variables were standardized specifically for linear, ridge, and lasso models.  Grid searching was performed to find the optimal hyperparameters.  The data was split into 70% training and 30% test set.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
+    Regression.  Supervised learning models were implented using Sckit-Learn.  The data was split into 70% training and 30% test set.  The predictor variables were standardized specifically for linear, ridge, and lasso models.  Grid search with k-fold cross validation was performed to find the optimal hyperparameters.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
 
     Classification.  A 2-D CNN model was implented using Tensorflow-Keras.  The architectural design of the neural network was shown on Table.  The housing prices were grouped into three categories: high (1,000,000 and above), medium (500,000 to 999,999), and low (0 to 499,999).  Training, validation, and test data consist of 10,832, 1,547, and 3,095 images respectively.
 
@@ -32,17 +32,17 @@ The dataset contains 15,474 housing entries and corresponding images.  A list of
 8. Price
 
 
-Figure.  Histograms of the housing dataset.
+Figure 1.  Histograms of the housing dataset.
 
 ![](figure/histograms.png)
 
 
-Figure.  Scatter plots of the housing dataset.
+Figure 2  Scatter plots of the housing dataset.
 
 ![](figure/scatterplots.png)
 
 
-Figure.  Correlation matrix of the housing dataset.
+Figure 3.  Correlation matrix of the housing dataset.
 
 ![](figure/correlation_matrix.png)
 
@@ -63,7 +63,7 @@ Lasso regression: best parameters: {'alpha': 0.001}
 
 
 
-Figure.  Residual plots of the models.
+Figure 4.  Residual plots of the models.
 
 ![](figure/residual_rf.png)
 
@@ -78,22 +78,22 @@ Figure.  Residual plots of the models.
 ![](figure/residual_linear.png)
 
 
-Figure.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimators.
+Figure 5.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimators.
 
 ![](figure/train_rmse_lr.png)
 
 
-Figure.  Gradient boosting regression: test set: RMSE vs learing rate at specific estimators.
+Figure 6.  Gradient boosting regression: test set: RMSE vs learing rate at specific estimators.
 
 ![](figure/test_rmse_lr.png)
 
 
-Figure.  Gradient boosting regression: permutation importances of training set.
+Figure 7.  Gradient boosting regression: permutation importances of training set.
 
 ![](figure/permutation.png)
 
 
-Table.  Overall training and test results.
+Table 1.  Overall training and test results.
 
 ![](figure/table.jpg)
 
@@ -104,3 +104,4 @@ Table.  Overall training and test results.
 
 ## Summary
 
+This study performed several machine learing models to predict housing prices.
