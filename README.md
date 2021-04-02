@@ -8,6 +8,8 @@ The goal of this study is to accurately predict housing prices by comparing vari
 ## Methods
 1. Exploratory data analysis
 
+    Identify features in the dataset, plot distribution, and determine correlations.
+
 2. Modeling
 
     Regression.  Supervised learning models were implented using Sckit-Learn.  The data was split into 70% training and 30% test set.  The predictor variables were standardized specifically for linear, ridge, and lasso models.  Grid search with k-fold cross validation was performed to find the optimal hyperparameters.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
@@ -100,9 +102,24 @@ Table 1.  Overall training and test results.
 
 ## Classification Model
 
+Model selection: 2-D CNN
+
+Predict class: high, medium, low price
+
 Figure 8.  Housing Images.
 
 ![](figure/house_images.png)
+
+
+Table 2.  CNN architecture.
+
+![](figure/model_parameters.jpg)
+
+Figure 9.  Graph of accuracy.
+
+
+Figure 10.  Graph of loss function.
+
 
 ## Summary
 
