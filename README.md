@@ -21,7 +21,7 @@ The goal of this study is to accurately predict housing prices by comparing vari
 
 ## Exploratory Data Analysis
 
-The dataset contains 15,474 house entries and corresponding images.  A list of features in the dataset includes:
+The dataset contains 15,474 housing entries and corresponding images.  A list of features in the dataset includes:
 1. Image ID
 2. Street
 3. City
@@ -32,17 +32,17 @@ The dataset contains 15,474 house entries and corresponding images.  A list of f
 8. Price
 
 
-Figure.  Histograms.
+Figure.  Histograms of the housing dataset.
 
 ![](figure/histograms.png)
 
 
-Figure.  Scatter plots.
+Figure.  Scatter plots of the housing dataset.
 
 ![](figure/scatterplots.png)
 
 
-Figure.  Correlation matrix.
+Figure.  Correlation matrix of the housing dataset.
 
 ![](figure/correlation_matrix.png)
 
@@ -63,7 +63,7 @@ Lasso regression: best parameters: {'alpha': 0.001}
 
 
 
-Figure.  Residual plots.
+Figure.  Residual plots of the models.
 
 ![](figure/residual_rf.png)
 
