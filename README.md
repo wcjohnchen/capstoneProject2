@@ -106,6 +106,8 @@ Model selection: 2-D CNN
 
 Predict class: high, medium, low price
 
+
+
 Figure 8.  Housing Images.
 
 ![](figure/house_images.png)
@@ -115,11 +117,14 @@ Table 2.  CNN architecture.
 
 ![](figure/model_parameters.jpg)
 
-Figure 9.  Graph of accuracy.
+
+Learning rate = 0.000001, optimizer = adam, epoch = 100 total
+
+Figure 9.  Graph of accuracy (last 50 epochs).
 
 ![](figure/cnn_train_val_acc.jpg)
 
-Figure 10.  Graph of loss function.
+Figure 10.  Graph of loss function (last 50 epochs).
 
 ![](figure/cnn_train_val_loss.jpg)
 
