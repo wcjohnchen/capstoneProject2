@@ -1,4 +1,4 @@
-# Machine Learning Modeling and Prediction of Housing Prices (In Progress)
+# Machine Learning Modeling and Prediction of Housing Prices
 
 ## Aim
 
