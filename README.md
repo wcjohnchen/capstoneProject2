@@ -128,9 +128,7 @@ Figure 10.  Graph of loss function (last 50 epochs).
 
 ![](figure/cnn_train_val_loss.jpg)
 
-Test accuracy = 0.5861
-Precision = 0.5305
-Recall = 0.6046
+Test accuracy = 0.5861, Precision = 0.5305, Recall = 0.6046
 
 ## Summary
 
