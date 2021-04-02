@@ -10,9 +10,9 @@ The goal of this study is to accurately predict housing prices by comparing vari
 
 2. Modeling
 
-    Regression.  Supervised learning models were implented using Sckit-Learn.  The predictor variables were standardized specifically for linear, ridge, and lasso models.  Grid searching was performed to find the optimal hyperparameters.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
+    Regression.  Supervised learning models were implented using Sckit-Learn.  The predictor variables were standardized specifically for linear, ridge, and lasso models.  Grid searching was performed to find the optimal hyperparameters.  The data was split into 70% training and 30% test set.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
 
-    Classification.  A 2-D CNN model was implented using Tensorflow-Keras.  The architectural design of the neural network was shown on Table.  The housing prices were grouped into three categories: high (1,000,000 and above), medium (500,000 to 999,999), and low (0 to 499,999).  
+    Classification.  A 2-D CNN model was implented using Tensorflow-Keras.  The architectural design of the neural network was shown on Table.  The housing prices were grouped into three categories: high (1,000,000 and above), medium (500,000 to 999,999), and low (0 to 499,999).  Training, validation, and test data consist of 10,832, 1,547, and 3,095 images respectively.
 
 3. Technologies
 
