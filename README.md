@@ -117,9 +117,11 @@ Table 2.  CNN architecture.
 
 Figure 9.  Graph of accuracy.
 
+![](figure/cnn_train_val_acc.jpg)
 
 Figure 10.  Graph of loss function.
 
+![](figure/cnn_train_val_loss.jpg)
 
 ## Summary
 
