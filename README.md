@@ -123,4 +123,4 @@ Figure 10.  Graph of loss function.
 
 ## Summary
 
-This study performed several machine learning models to predict housing prices for regression and classification.  Gradient boosting regression outperforms and shows the best R2 and RMSE.
+This study performed several machine learning models to predict housing prices for regression and classification.  Gradient boosting regression outperforms all other models with the highest R2.
