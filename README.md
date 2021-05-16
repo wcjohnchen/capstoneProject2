@@ -1,5 +1,7 @@
 # Machine Learning Modeling and Prediction of Housing Prices
 
+![](figure/housingpic.jpg)
+
 ## Aim
 
 The goal of this study is to accurately predict housing prices by comparing various machine learning models: linear, ridge, lasso, decision tree, random forest, gradient boosting regression, and convolutional neural network (CNN)-based classification.  This dataset includes relevant features and images of houses in Southern California.  It is available at: https://www.kaggle.com/ted8080/house-prices-and-images-socal.
@@ -34,17 +36,17 @@ The dataset contains 15,474 housing entries and corresponding images.  A list of
 8. Price
 
 
-Figure 1.  Histograms of the housing dataset.
+**Figure 1**.  Histograms of the housing dataset.
 
 ![](figure/histograms.png)
 
 
-Figure 2  Scatter plots of the housing dataset.
+**Figure 2**.  Scatter plots of the housing dataset.
 
 ![](figure/scatterplots.png)
 
 
-Figure 3.  Correlation matrix of the housing dataset.
+**Figure 3**.  Correlation matrix of the housing dataset.
 
 ![](figure/correlation_matrix.png)
 
@@ -65,7 +67,7 @@ Lasso regression: best parameters: {'alpha': 0.001}
 
 
 
-Figure 4.  Residual plots of the models.
+**Figure 4**.  Residual plots of the models.
 
 ![](figure/residual_rf.png)
 
@@ -80,22 +82,22 @@ Figure 4.  Residual plots of the models.
 ![](figure/residual_linear.png)
 
 
-Figure 5.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimators.
+**Figure 5**.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimators.
 
 ![](figure/train_rmse_lr.png)
 
 
-Figure 6.  Gradient boosting regression: test set: RMSE vs learing rate at specific estimators.
+**Figure 6**.  Gradient boosting regression: test set: RMSE vs learing rate at specific estimators.
 
 ![](figure/test_rmse_lr.png)
 
 
-Figure 7.  Gradient boosting regression: permutation importances of the training set.
+**Figure 7**.  Gradient boosting regression: permutation importances of the training set.
 
 ![](figure/permutation.png)
 
 
-Table 1.  Overall training and test results.
+**Table 1**.  Overall training and test results.
 
 ![](figure/table.jpg)
 
@@ -104,27 +106,27 @@ Table 1.  Overall training and test results.
 
 Model selection: 2-D CNN
 
-Predict class: high, medium, low price
+Predict classes: high, medium, low price
 
 
 
-Figure 8.  Housing Images.
+**Figure 8**.  Representative housing Images.
 
 ![](figure/house_images.png)
 
 
-Table 2.  CNN architecture.
+**Table 2**.  CNN architecture.
 
 ![](figure/model_parameters.jpg)
 
 
 Learning rate = 0.000001, optimizer = adam, epoch = 100 total
 
-Figure 9.  Graph of accuracy (last 50 epochs).
+**Figure 9**.  Graph of accuracy (last 50 epochs).
 
 ![](figure/cnn_train_val_acc.jpg)
 
-Figure 10.  Graph of loss function (last 50 epochs).
+**Figure 10**.  Graph of loss function (last 50 epochs).
 
 ![](figure/cnn_train_val_loss.jpg)
 
@@ -133,3 +135,31 @@ Test accuracy = 0.5861, precision = 0.5305, recall = 0.6046
 ## Summary
 
 This study performed several machine learning models to predict housing prices for regression and classification.  Gradient boosting regression outperforms all other models with the highest R2.  Present CNN model was built on a simple two convolutional layers.  A deeper network and further tuning of hyperparameters may be neccessary to improve classification accuracy for future experiments.
+
+
+## Addendum
+
+To improve the classification accuracy of the housing dataset, a more sophisticated neural network was required (Suppl. Table 1).
+
+**Supplementary Table 1**.  CNN architecture.
+
+![](figure/cnn_model2.jpg)
+
+
+Learning rate = 0.001, optimizer = adam, epoch = 63 total
+
+**Supplementary Figure 1**.  A plot of train vs validation accuracy (first 35 epochs).
+
+![](figure/accuracy.png)
+
+
+**Supplementary Figure 1**.  A plot of train vs validation loss (first 35 epochs).
+
+![](figure/loss.png)
+
+
+Train accuracy: 0.9748; precision: 0.9779; recall: 0.9734.
+
+Test accuracy 0.6362; precision: 0.6394; recall: 0.6320.
+
+
