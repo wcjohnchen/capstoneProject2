@@ -130,7 +130,7 @@ Learning rate = 0.000001, optimizer = adam, epoch = 100 total
 
 ![](figure/cnn_train_val_loss.jpg)
 
-Validation accuracy = 0.5861, precision = 0.5305, recall = 0.6046
+Test accuracy = 0.5861, precision = 0.5305, recall = 0.6046
 
 ## Summary
 
@@ -172,7 +172,7 @@ B)
 
 Train accuracy: 0.9748; precision: 0.9779; recall: 0.9734.
 
-Validation accuracy 0.6362; precision: 0.6394; recall: 0.6320.
+Test accuracy 0.6362; precision: 0.6394; recall: 0.6320.
 
 
 With increased layers and trainable parameters, the model improves the classification accuracy to 63.6%.
