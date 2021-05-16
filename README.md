@@ -153,7 +153,7 @@ Learning rate = 0.001, optimizer = adam, epoch = 63 total
 ![](figure/accuracy.png)
 
 
-**Supplementary Figure 1**.  A plot of train vs validation loss (first 35 epochs).
+**Supplementary Figure 2**.  A plot of train vs validation loss (first 35 epochs).
 
 ![](figure/loss.png)
 
@@ -163,3 +163,4 @@ Train accuracy: 0.9748; precision: 0.9779; recall: 0.9734.
 Test accuracy 0.6362; precision: 0.6394; recall: 0.6320.
 
 
+With increased layers and trainable parameters, the model improves the classificiation accuracy to 63.6%.
