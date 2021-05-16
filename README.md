@@ -175,4 +175,4 @@ Train accuracy: 0.9748; precision: 0.9779; recall: 0.9734.
 Test accuracy 0.6362; precision: 0.6394; recall: 0.6320.
 
 
-With increased layers and trainable parameters, the model improves the classification accuracy to 63.6%..
+With increased layers and trainable parameters, the model improves the classification accuracy to 63.6%.
