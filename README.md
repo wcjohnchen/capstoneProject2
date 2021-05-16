@@ -148,14 +148,22 @@ To improve the classification accuracy of the housing dataset, a more sophistica
 
 Learning rate = 0.001, optimizer = adam, epoch = 63 total
 
-**Supplementary Figure 1**.  A plot of train vs validation accuracy (first 35 epochs).
+**Supplementary Figure 1**.  A plot of train vs validation accuracy.  (A) First 35 epochs.  (B) Last 28 epochs.
 
+A)
 ![](figure/accuracy.png)
 
+B)
+![](figure/accuracy2.png)
 
-**Supplementary Figure 2**.  A plot of train vs validation loss (first 35 epochs).
 
+**Supplementary Figure 2**.  A plot of train vs validation loss.  (A) First 35 epochs.  (B) Last 28 epochs.
+
+A)
 ![](figure/loss.png)
+
+B)
+![](figure/loss2.png)
 
 
 Train accuracy: 0.9748; precision: 0.9779; recall: 0.9734.
