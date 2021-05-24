@@ -55,7 +55,7 @@ The dataset contains 15,474 housing entries and corresponding images.  A list of
 
 Hyperparameter optimization:
 
-Random forest: best parameters: {'max_depth': 55, 'max_features': 'auto', 'min_samples_leaf': 1, 'n_estimators': 1550, 'oob_score': True}
+Random forest: best parameters: {'max_depth': None, 'max_features': 'auto', 'min_samples_leaf': 1, 'n_estimators': 1550, 'oob_score': True}
 
 Decision tree: best parameters: {'max_depth': 15, 'max_features': 'auto'}
 
