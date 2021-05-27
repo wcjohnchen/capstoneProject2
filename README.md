@@ -139,40 +139,26 @@ This study performed several machine learning models to predict housing prices f
 
 ## Addendum
 
-To improve the classification accuracy of the housing dataset, a more sophisticated neural network was required (Suppl. Table 1).
-
-**Supplementary Table 1**.  CNN architecture.
-
-![](figure/cnn_model2.jpg)
+In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient desent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was displayed in the juypter notebook here: https://github.com/wcjohnchen/capstoneProject2/blob/main/src/cnn.ipynb.
 
 
-Learning rate = 0.001, optimizer = adam, epoch = 63 total
+Learning rate = 0.00005, optimizer = SGD.
 
-**Supplementary Figure 1**.  A plot of train vs validation accuracy.  (A) First 35 epochs.  (B) Last 28 epochs.
-
-A)
+**Supplementary Figure 1**.  A plot of train vs validation accuracy.
 
 ![](figure/accuracy.png)
 
-B)
-
-![](figure/accuracy2.png)
 
 
-**Supplementary Figure 2**.  A plot of train vs validation loss.  (A) First 35 epochs.  (B) Last 28 epochs.
+**Supplementary Figure 2**.  A plot of train vs validation loss.
 
-A)
 
 ![](figure/loss.png)
 
-B)
 
-![](figure/loss2.png)
+Train accuracy: 0.5744; precision: 0.5994; recall: 0.4619.
 
-
-Train accuracy: 0.9748; precision: 0.9779; recall: 0.9734.
-
-Test accuracy 0.6362; precision: 0.6394; recall: 0.6320.
+Test accuracy: 0.5492; precision: 0.5790; recall: 0.4465.
 
 
-With increased layers and trainable parameters, the model improves the classification accuracy to 63.6%.
+With the model properly fitited, the model shows an accuracy of 54.9% for the test set for this image classification study.
