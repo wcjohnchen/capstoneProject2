@@ -134,7 +134,7 @@ Test accuracy = 0.5861, precision = 0.5305, recall = 0.6046
 
 ## Summary
 
-This study performed several machine learning models to predict housing prices for regression and classification.  Gradient boosting regression outperforms all other models with the highest R2.  Present CNN model was built on a simple two convolutional layers.  A deeper network and further tuning of hyperparameters may be neccessary for improvement for future experiments.
+This study performed several machine learning models to predict housing prices for regression and classification.  Gradient boosting regression outperforms all other models with the highest R2.  Present CNN model was built on a simple two convolutional layers.  A deeper network and further tuning of hyperparameters may be neccessary for future improvement.
 
 
 ## Addendum
