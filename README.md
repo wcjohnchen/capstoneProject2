@@ -146,14 +146,14 @@ Learning rate = 0.00005, optimizer = SGD.
 
 **Supplementary Figure 1**.  A plot of train vs validation accuracy.
 
-![](figure/accuracy.png)
+![](figure/accuracy.jpg)
 
 
 
 **Supplementary Figure 2**.  A plot of train vs validation loss.
 
 
-![](figure/loss.png)
+![](figure/loss.jpg)
 
 
 Train accuracy: 0.5744; precision: 0.5994; recall: 0.4619.
