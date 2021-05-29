@@ -139,7 +139,7 @@ This study performed several machine learning models to predict housing prices f
 
 ## Addendum
 
-**Convolutional Neural Network**.  In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient desent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was displayed in the juypter notebook here: https://github.com/wcjohnchen/capstoneProject2/blob/main/src/cnn.ipynb.
+**Convolutional Neural Network**.  In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient descent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was displayed in the juypter notebook here: https://github.com/wcjohnchen/capstoneProject2/blob/main/src/cnn.ipynb.
 
 
 Learning rate = 0.00005, optimizer = SGD.
