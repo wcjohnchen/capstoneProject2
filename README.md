@@ -139,7 +139,7 @@ This study performed several machine learning models to predict housing prices f
 
 ## Addendum
 
-In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient desent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was displayed in the juypter notebook here: https://github.com/wcjohnchen/capstoneProject2/blob/main/src/cnn.ipynb.
+**Convolutional Neural Network**.  In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient desent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was displayed in the juypter notebook here: https://github.com/wcjohnchen/capstoneProject2/blob/main/src/cnn.ipynb.
 
 
 Learning rate = 0.00005, optimizer = SGD.
@@ -161,4 +161,17 @@ Train accuracy: 0.5744; precision: 0.5994; recall: 0.4619.
 Test accuracy: 0.5492; precision: 0.5790; recall: 0.4465.
 
 
-With the model properly fitited, the model shows an accuracy of 54.9% for the test set for this image classification study.
+With the model properly fitited, the CNN model shows an accuracy of 54.9% for the test set for this image classification study.
+
+
+**Gradient Boost and Random Forest Classifiers**.  Gradient boosting and random forest models for classification were also performed.  The gradient boosting achieved the best accurary of 83.9% on the test set.
+
+
+**Supplementary Figure 3**.  A confusion matrix for gradient boosting classification.
+
+![](figure/confusion_matrix.jpg)
+
+
+**Supplementary Table 1**.  Overall training and test results for classification.
+
+![](figure/summary_classification.jpg)
