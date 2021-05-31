@@ -34,7 +34,7 @@ The goal of this study is to predict housing prices by comparing various machine
 
 2. Modeling
 
-    Regression.  Supervised learning models were implented using Sckit-Learn.  The data was split into 70% training and 30% test set.  The predictor variables were standardized specifically for linear models.  Grid search with k-fold cross validation was performed to find the optimal hyperparameters.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
+    Regression.  Supervised learning models were implented using Sckit-Learn.  The data was split into 70% training and 30% test set.  The predictor variables were standardized specifically for linear models.  Grid search with k-fold cross validation (k = 5) was performed to find the optimal hyperparameters.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
 
     Classification.  A 2-D CNN model was implented using Tensorflow-Keras.  The architectural design of the neural network was shown on Table 2.  The housing prices were grouped into three categories: low (0 to 499,999), medium (500,000 to 999,999), and high (1,000,000 and above).  Training, validation, and test data consist of 10,832, 1,547, and 3,095 images respectively.
 
@@ -186,6 +186,10 @@ With the model properly fitited, the CNN model shows an accuracy of 54.9% for th
 
 
 **Gradient Boost and Random Forest Classifiers**.  Gradient boosting and random forest models for classification were also performed.  The gradient boosting achieved the best accurary of 83.9% on the test set.
+
+Random forest classifier: best parameters: {'max_depth': None, 'max_features': 'auto', 'min_samples_leaf': 1, 'n_estimators': 300, 'oob_score': True}
+
+Gradient boosting classifier:  best parameters: {'learning_rate': 0.05, 'max_depth': 5, 'max_features': 'auto', 'n_estimators': 4500, 'subsample': 0.15}
 
 
 **Supplementary Figure 3**.  A confusion matrix for gradient boosting classification.
