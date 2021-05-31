@@ -2,37 +2,58 @@
 
 ![](figure/housingpic.jpg)
 
-## Aim
 
-The goal of this study is to predict housing prices by comparing various machine learning models: linear, ridge, lasso, decision tree, random forest, gradient boosting regression, and convolutional neural network (CNN)-based classification.  This dataset includes relevant features and images of houses in Southern California.  It is available at: https://www.kaggle.com/ted8080/house-prices-and-images-socal.
+## Table of Contents
+
+I. Aim
+
+II. Methods
+
+III. Exploratory Data analysis
+
+IV. Regression Models
+
+V. Image Classification
+
+VI. Summary
+
+VII. Addendum
 
 
-## Methods
-1. Exploratory data analysis
 
-    Identify features in the dataset, plot distribution, and determine correlations.
+## I. Aim
+
+The goal of this study is to predict housing prices by comparing various machine learning models for regression and classification: linear, decision tree, random forest, gradient boosting, and a convolutional neural network (CNN)-based image classification.  This dataset includes relevant features and images of houses in Southern California.  A web application for housing prediction was also desgined and implemented using Flask.
+
+
+## II. Methods
+1. Data pre-processing and exploratory data analysis
+
+    Extract and clean data, identify features in the dataset, plot distribution, and determine correlations.  The dataset is available at: https://www.kaggle.com/ted8080/house-prices-and-images-socal.
+
 
 2. Modeling
 
     Regression.  Supervised learning models were implented using Sckit-Learn.  The data was split into 70% training and 30% test set.  The predictor variables were standardized specifically for linear models.  Grid search with k-fold cross validation was performed to find the optimal hyperparameters.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
 
-    Classification.  A 2-D CNN model was implented using Tensorflow-Keras.  The architectural design of the neural network was shown on Table 2.  The housing prices were grouped into three categories: high (1,000,000 and above), medium (500,000 to 999,999), and low (0 to 499,999).  Training, validation, and test data consist of 10,832, 1,547, and 3,095 images respectively.
+    Classification.  A 2-D CNN model was implented using Tensorflow-Keras.  The architectural design of the neural network was shown on Table 2.  The housing prices were grouped into three categories: low (0 to 499,999), medium (500,000 to 999,999), and high (1,000,000 and above).  Training, validation, and test data consist of 10,832, 1,547, and 3,095 images respectively.
 
 3. Technologies
 
-    Python, Numpy, Pandas, Matplotlib, Seaborn, Sckit-Learn, Tensorflow, Keras, AWS EC2.
+    Python, Numpy, Pandas, Matplotlib, Seaborn, Sckit-Learn, Tensorflow, Keras, AWS EC2, Flask.
 
 
-## Exploratory Data Analysis
+## III. Exploratory Data Analysis
 
 The dataset contains 15,474 housing entries and corresponding images.  A list of features in the dataset includes:
+
 1. Image ID
 2. Street
 3. City
 4. City code
 5. Bed
 6. Bath
-7. Square foot
+7. Square feet
 8. Price
 
 
@@ -51,7 +72,7 @@ The dataset contains 15,474 housing entries and corresponding images.  A list of
 ![](figure/correlation_matrix.png)
 
 
-## Regression Models
+## IV. Regression Models
 
 Hyperparameter optimization:
 
@@ -102,7 +123,7 @@ Lasso regression: best parameters: {'alpha': 0.001}
 ![](figure/table.jpg)
 
 
-## Classification Model
+## V. Image Classification
 
 Model selection: 2-D CNN
 
@@ -132,14 +153,14 @@ Learning rate = 0.000001, optimizer = adam, epoch = 100 total
 
 Test accuracy = 0.5861, precision = 0.5305, recall = 0.6046
 
-## Summary
+## VI. Summary
 
 This study performed several machine learning models to predict housing prices for regression and classification.  Gradient boosting regression outperforms all other models with the highest R2.  Present CNN model was built on a simple two convolutional layers.  A deeper network and further tuning of hyperparameters may be neccessary for future improvement.
 
 
-## Addendum
+## VII. Addendum
 
-**Convolutional Neural Network**.  In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient descent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was displayed in the juypter notebook here: https://github.com/wcjohnchen/capstoneProject2/blob/main/src/cnn.ipynb.
+**Convolutional Neural Network**.  In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient descent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was shown here: https://github.com/wcjohnchen/capstoneProject2/blob/main/data/cnn_architecture.txt.
 
 
 Learning rate = 0.00005, optimizer = SGD.
