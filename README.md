@@ -47,14 +47,14 @@ The goal of this study is to predict housing prices by comparing various machine
 
 The dataset contains 15,474 housing entries and corresponding images.  A list of features in the dataset includes:
 
-1. Image ID
-2. Street
-3. City
-4. City code
-5. Bed
-6. Bath
-7. Square feet
-8. Price
+1. Image ID (identifier)
+2. Street (address)
+3. City (address)
+4. City code (identifier)
+5. Bed (number of bedroom)
+6. Bath (number of bathroom)
+7. Square feet (number of square feet)
+8. Price (housing price)
 
 
 **Figure 1**.  Histograms of the housing dataset.
