@@ -198,9 +198,7 @@ With the model properly fitited, the CNN model shows an accuracy of 54.9% for th
 ![](figure/summary_classification.jpg)
 
 
-## Flask Application
-
-Flask was implemented to integrate the gradient boosting classification model into the web application for housing prediction in Southern California.  User may input the name of city, number of bedroom, bathroom, and squared feet.  The output will display one of three following classes: low price (under 499,999), medium price (between 500,000 and 999,999), or high price (above 1,000,000).
+**Flask Application**.  Flask was implemented to integrate the gradient boosting classification model into the web application for housing prediction in Southern California.  User may input the name of city, number of bedroom, bathroom, and squared feet.  The output will display one of three following classes: low price (under 499,999), medium price (between 500,000 and 999,999), or high price (above 1,000,000).
 
 
 **Supplementary Figure 4**.  A Flask application for maching learning.  The gradient boosting classification model was embedded.  An input example was displayed.
