@@ -205,6 +205,13 @@ Gradient boosting classifier:  best parameters: {'learning_rate': 0.05, 'max_dep
 **Flask Application**.  Flask was implemented to integrate the gradient boosting classification model into the web application for housing prediction in Southern California.  User may input the name of city, number of bedroom, bathroom, and squared feet.  The output will display one of three following classes: low price (under 499,999), medium price (between 500,000 and 999,999), or high price (above 1,000,000).
 
 
-**Supplementary Figure 4**.  A Flask application for maching learning.  The gradient boosting classification model was embedded.  An input example was displayed.
+**Supplementary Figure 4**.  A Flask application for maching learning.  The gradient boosting classification model was embedded.  (A) An input example that was classified as 'above 1,000,000', and (B) another example classified as 'under 499,999'.
+
+A)
 
 ![](figure/flaskapp.jpg)
+
+
+B)
+
+![](figure/flaskapp2.jpg)
