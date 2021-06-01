@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <html>
+	
+	<body bgcolor='white'>
+	
+        <title>
+            Gradient Boosting Classification
+        </title>
+    </head>
+	
+	<Center>
+	
+		<h1>  HOUSING CLASSIFICATION PREDICTION  </h1>
+		<h1>  IN SOUTHERN CALIFORNIA  </h1>
+	
+	<img src='static/housingpic.jpg' alt='house'>
+	
+    <body>
+	
+		<form action="{{ url_for('predict')}}"method="POST">
+			City Name: <input type='text' name='city_code' placeholder='Enter name' size='20'/> <br><br>
+			Bedroom: <input type='text' name='bed' placeholder='Enter number', size='21'/> <br><br>
+			Bathroom: <input type='text' name='bath' placeholder='Enter number', size='20.5'/> <br><br>
+			Squared feet: <input type='text' name='sqrt' placeholder='Enter number', size='17.5'/> <br><br><br><br>
+            <input type='submit' value='Predict'/>
+        </form>
+        <p>
+            Your inputs are: {{enters}}
+        </p>
+		
+		<p>
+			The approximate pricing is {{predicts}}
+        </p>
+	
+	</Center>
+	
+    </body>
+</html>
