@@ -185,11 +185,13 @@ Test accuracy: 0.5492; precision: 0.5790; recall: 0.4465.
 With the model properly fitited, the CNN model shows an accuracy of 54.9% for the test set for this image classification study.
 
 
-**Gradient Boost and Random Forest Classifiers**.  Gradient boosting and random forest models for classification were also performed.  The gradient boosting achieved the best accurary of 83.9% on the test set.
+**Random Forest, Gradient Boosting, and Extreme Gradient Classifiers**.  Random forest, gradient boosting, and XGBoost models for classification were also performed.  The gradient boosting and XGBoost models achieved a higher accurary of 83.9% on the test set.
 
 Random forest classifier: best parameters: {'max_depth': None, 'max_features': 'auto', 'min_samples_leaf': 1, 'n_estimators': 300, 'oob_score': True}
 
 Gradient boosting classifier:  best parameters: {'learning_rate': 0.05, 'max_depth': 5, 'max_features': 'auto', 'n_estimators': 4500, 'subsample': 0.15}
+
+XGBoost: best parameters: best parameters: {'colsample_bytree': 0.9, 'gamma': 0.5, 'learning_rate': 0.1, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 3500, 'subsample': 0.9}
 
 
 **Supplementary Figure 3**.  A confusion matrix for gradient boosting classification.
