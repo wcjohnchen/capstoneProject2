@@ -182,10 +182,10 @@ Train accuracy: 0.5744; precision: 0.5994; recall: 0.4619.
 Test accuracy: 0.5492; precision: 0.5790; recall: 0.4465.
 
 
-With the model properly fitited, the CNN model shows an accuracy of 54.9% for the test set for this image classification study.
+With the model properly fitted, the CNN model shows an accuracy of 54.9% for the test set for this image classification study.
 
 
-**Random Forest, Gradient Boosting, and Extreme Gradient Classifiers**.  Random forest, gradient boosting, and XGBoost models for classification were also added.  Both gradient boosting and XGBoost models achieved high accurary of 84.2% on the test set.
+**Random Forest, Gradient Boosting, and Extreme Gradient Boosting Classifiers**.  Random forest, gradient boosting, and XGBoost models for classification were also added.  Both gradient boosting and XGBoost models achieved high accurary of 84.2% on the test set.
 
 Random forest classifier: best parameters: {'max_depth': None, 'max_features': 'auto', 'min_samples_leaf': 1, 'n_estimators': 300, 'oob_score': True}
 
