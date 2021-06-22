@@ -34,7 +34,7 @@ The goal of this study is to predict housing prices by comparing various machine
 
 2. Modeling
 
-    Regression.  Supervised learning models were implented using Sckit-Learn.  The data was split into 70% training and 30% test set.  The predictor variables were standardized specifically for linear models.  Grid search with k-fold cross validation (k = 5) was performed to find the optimal hyperparameters.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
+    Regression.  Supervised learning models were implented using Sckit-Learn.  The data was split into 70% training and 30% test set.  The dependent variable was log transformed.  The predictor variables were standardized specifically for linear models.  Grid search with k-fold cross validation (k = 5) was performed to find the optimal hyperparameters.  MAE: mean absolute error; MSE: mean standard error; RMSE: root mean standard error.
 
     Classification.  A 2-D CNN model was implented using Tensorflow-Keras.  The architectural design of the neural network was shown on Table 2.  The housing prices were grouped into three categories: low (0 to 499,999), medium (500,000 to 999,999), and high (1,000,000 and above).  Training, validation, and test data consist of 10,832, 1,547, and 3,095 images respectively.
 
@@ -160,7 +160,7 @@ This study performed several machine learning models to predict housing prices f
 
 ## VII. Addendum
 
-**Convolutional Neural Network**.  In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient descent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was shown here: https://github.com/wcjohnchen/capstoneProject2/blob/main/data/cnn_architecture.txt.
+**Convolutional Neural Network**.  In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient descent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was shown here: https://github.com/wcjohnchen/capstoneProject2/blob/main/data/cnn_architecture.txt.  It may also be useful to apply kernel regularizer (on weights) and/or activity regularizer (on layer output) to the convoultional layer in order to achieve a higher accurary in the future implementation.
 
 
 Learning rate = 0.00005, optimizer = SGD.
@@ -182,7 +182,7 @@ Train accuracy: 0.5744; precision: 0.5994; recall: 0.4619.
 Test accuracy: 0.5492; precision: 0.5790; recall: 0.4465.
 
 
-With the model properly fitted, the CNN model shows an accuracy of 54.9% for the test set for this image classification study.
+With the model fitted, the CNN model shows an accuracy of 54.9% for the test set for this image classification study.
 
 
 **Random Forest, Gradient Boosting, and Extreme Gradient Boosting Classifiers**.  Random forest, gradient boosting, and XGBoost models for classification were also added.  Both gradient boosting and XGBoost models achieved high accurary of 84.2% on the test set.
