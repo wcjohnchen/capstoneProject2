@@ -100,8 +100,6 @@ Lasso regression: best parameters: {'alpha': 0.001}
 
 ![](figure/residual_lasso.png)
 
-![](figure/residual_linear.png)
-
 
 **Figure 5**.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimators.
 
